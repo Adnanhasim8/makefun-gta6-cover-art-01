@@ -4,30 +4,30 @@
 [![rank](https://make.fun/badge/gta6-cover-art-01/Adnanhasim8/makefun-gta6-cover-art-01/rank.svg)](https://make.fun/bounty/gta6-cover-art-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=gta6-cover-art-01)
 [![reward](https://make.fun/badge/gta6-cover-art-01/Adnanhasim8/makefun-gta6-cover-art-01/reward.svg)](https://make.fun/bounty/gta6-cover-art-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-cover-art-01)
 
-Turn any photo and a caption into GTA-style cover art, exported as a PNG to
-share. An offline web app: your photos never leave your machine.
+A free, offline web app that turns any photo and a caption into GTA-style
+poster cover art, exported as a PNG to share.
 
 ## What it does
 
-- **Any photo** — add up to three photos from your machine (or try the two
-  free sample photos). Click a panel on the preview to pick which photo fills
-  it, drag to reposition it inside the panel, and zoom it.
-- **Multi-panel poster layouts** — Poster grid (hero + three), Full bleed,
-  Triptych, and Nine panel.
-- **Bold lettering** — a big condensed title, a neon script subtitle, and a
-  letterspaced tagline, over a sunset disc, film grain and vignette.
-- **Colour grades** — Sunset, Neon night, Vice pink, Golden hour, Teal noir.
-- **Post sizes** — 1080 × 1080, 1080 × 1350 and 1920 × 1080, exported as PNG
-  in one click.
+- **Any photo** — add your own photos from your machine (never uploaded),
+  or try the three built-in sample scenes. Click a photo, then a panel, to
+  place it; drag a panel to pan, scroll to zoom, or use the zoom slider.
+- **Multi-panel covers** — three layouts: Vice Grid (hero photo + three
+  stacked panels), Four Up (2×2), and Full Bleed (one photo edge to edge
+  with two tilted snapshots).
+- **Post sizes** — 1080 × 1080, 1080 × 1350 and 1920 × 1080, one click to
+  switch, one click to export.
+- **Grades** — Vice Sunset, Neon Night, Teal Coast and Noir colour grades,
+  plus film grain and a white poster frame.
+- **Lettering** — a big gradient title, a neon script subtitle, a badge
+  ribbon and a star heat meter, all editable.
 
-## Run it
+## Try it
 
 ```sh
 node serve.ts
+# open http://localhost:8080
 ```
-
-Then open http://localhost:8080 in desktop Chrome. No build step, no network
-request — every file the app loads lives under `app/`.
 
 ## Hand it in
 
@@ -35,25 +35,16 @@ request — every file the app loads lives under `app/`.
 mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
 ```
 
-`main.ts` copies `app/` and `screenshots/` to the output directory and writes
-`dossier.json` with the vendored make.fun library.
-
-## Fonts and photos
-
-- Lettering uses Noto Sans Condensed Black and Noto Serif Display Black
-  Italic, both under the SIL Open Font License 1.1 (see
-  `app/fonts/OFL.txt`).
-- The two sample photos under `app/samples/` were made with an image model
-  for make.fun and are free to use.
+`main.ts` copies `app/` and `screenshots/` to the output directory and
+writes `dossier.json` with the kit's vendored `vendor/makefun-app.ts`.
 
 ## Originality
 
-Original art and lettering made for this app. Not affiliated with Rockstar
-Games; no Rockstar logo, artwork, character or font is used.
-
-## License
-
-MIT — see `LICENSE`.
+Everything here is original: the art, layouts and code were made for this
+entry. The fonts (Anton and Pacifico) are under the SIL Open Font License —
+see `app/fonts/OFL.txt`. The sample scenes under `app/samples/` are
+illustrations drawn for this entry. No Rockstar Games logo, artwork,
+character or font is used.
 
 ---
 
